@@ -1,0 +1,248 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      background-color: #fff;
+
+    }
+
+    /*  BACKGROUND  */
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: whitesmoke;
+      z-index: -1;
+    }
+
+    /*  HEADER  */
+    header {
+      width: 100%;
+      background: #e1a5e9;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-image: url(https://cdn.pixabay.com/photo/2022/06/14/15/26/background-7262229_1280.jpg);
+    }
+
+    .logo {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+
+    header h1 {
+      color: #6567ec;
+      background-color: rgba(246, 248, 243, 0.95);
+      border: 1px solid;
+      border-radius: 50px;
+      padding: 8px 24px;
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 10px auto;
+    }
+
+    /*  NAV  */
+    nav {
+      background-color: #e1a5e9;
+      padding: 15px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #363636;
+      font-family: fantasy;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #6567ec;
+    }
+
+    /*  MAIN  */
+    main {
+      padding: 40px 20px;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+    .tipografia h3 {
+      text-align: center;
+      color: #6567ec;
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .wrapper-cards {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #e1bde6;
+      border: 1px solid #fff;
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 20px;
+      display: block;
+      margin: 20px auto;
+
+    }
+
+    .titulo {
+      display: block;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 12px;
+    }
+
+    .price {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 10px 0;
+    }
+
+    .wrapper-buttons-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .addcar,
+    .comprar {
+      background: linear-gradient(135deg, #dd98af 0%, #ff9a9e 100%);
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .addcar:hover,
+    .comprar:hover {
+      background: linear-gradient(135deg, #b3697f 6%, #6365d3 100%);
+      transform: scale(1.05);
+    }
+
+    /* CONTATO  */
+    #contato {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    #contato h2 {
+      color: #6567ec;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    #contato a {
+      color: #6567ec;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .rede_social {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: 1.2rem;
+      margin-top: 20px;
+    }
+
+    .rede_social a {
+      text-decoration: none;
+      color: #363636;
+      transition: color 0.3s;
+    }
+
+    .rede_social a:hover {
+      color: #6567ec;
+    }
+
+    /*  FOOTER  */
+    footer {
+      background-image: url(https://cdn.pixabay.com/photo/2022/06/14/15/26/background-7262229_1280.jpg);
+      color: black;
+      text-align: center;
+      padding: 20px;
+      font-weight: bold;
+      margin-top: 60px;
+    }
+
+    /*  RESPONSIVIDADE  */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 10px 0;
+      }
+
+      nav ul {
+        gap: 20px;
+      }
+
+      .card img {
+        max-width: 200px;
+      }
+
+      .tipografia h3 {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .wrapper-buttons-card {
+        grid-template-columns: 1fr;
+      }
+
+      .addcar,
+      .comprar {
+        font-size: 0.9rem;
+      }
+
+      footer {
+        font-size: 0.9rem;
+      }
+    }

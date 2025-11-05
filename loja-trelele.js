@@ -1,14 +1,9 @@
+const mensagem = document.getElementById("menssagem");
 
-
-function adicionarAoCarrinho (){
-    
-    const menssagem= document.getElementById("menssagem");
-    menssagem.style.display= "block";
+function adicionarAoCarrinho(){
+    mensagem.style.display= "block";
 
     setTimeout(() => {
-      mensagem.style.display = "none";
+        mensagem.style.display = "none";
     }, 3000);
-  }
-
-
-
+};

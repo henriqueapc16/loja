@@ -1,5 +1,14 @@
-alert("adicionado ao carrinho")
 
-function adicionar (addCar){
-    console.log("adicionado ao carrinho")
-}
+
+function adicionarAoCarrinho (){
+    
+    const menssagem= document.getElementById("menssagem");
+    menssagem.style.display= "block";
+
+    setTimeout(() => {
+      mensagem.style.display = "none";
+    }, 3000);
+  }
+
+
+
